@@ -18,5 +18,5 @@ print send_msg_to_avrcv('?RGD')
 #   On          On          PWR0   #
 #   Off         On          PWR1
 
-
+# Test
 print send_msg_to_avrcv('?HZV')
