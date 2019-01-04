@@ -24,7 +24,8 @@ print send_msg_to_avrcv('?P')
 print send_msg_to_avrcv('?HZM')
 
 
-# Test
+# Looks like getting HDZONE Volume
+print send_msg_to_avrcv('?HZV')
 
 # for i in range(256):
 #     recv = send_msg_to_avrcv('?RGB{}'.format(i))
