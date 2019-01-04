@@ -10,13 +10,25 @@ def send_msg_to_avrcv(msg):
     return received
 
 
-print send_msg_to_avrcv('?RGD')
+print send_msg_to_avrcv('?P')
 
-#### Get power state ###
+########## Get power state #########
 #   MAIN        HDZONE      OUTPUT #
 #   On          Off         PWR0   #
 #   On          On          PWR0   #
-#   Off         On          PWR1
+#   Off         On          PWR1   #
+#   Off         Off         PWR1   #
+####################################
+# Looks like msg='?P' checks power state of Main Zone. PWR0=On, PWR1=Off
+
+print send_msg_to_avrcv('?HZM')
+
 
 # Test
-print send_msg_to_avrcv('?HZV')
+
+# for i in range(256):
+#     recv = send_msg_to_avrcv('?RGB{}'.format(i))
+#     if not recv.startswith('E0'):
+#         print '?RGB{} --> {}'.format(i, recv)
+
+# print send_msg_to_avrcv('?RGB41')
