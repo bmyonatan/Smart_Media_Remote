@@ -10,7 +10,7 @@ def send_msg_to_avrcv(msg):
     return received
 
 
-print send_msg_to_avrcv('?P')
+print send_msg_to_avrcv('ZEO')
 
 ########## Get power state #########
 #   MAIN        HDZONE      OUTPUT #
@@ -19,13 +19,13 @@ print send_msg_to_avrcv('?P')
 #   Off         On          PWR1   #
 #   Off         Off         PWR1   #
 ####################################
-# Looks like msg='?P' checks power state of Main Zone. PWR0=On, PWR1=Off
+# Looks like m sg='?P' checks power state of Main Zone. PWR0=On, PWR1=Off
 
-print send_msg_to_avrcv('?HZM')
+# print send_msg_to_avrcv('?HZM')
 
 
 # Looks like getting HDZONE Volume
-print send_msg_to_avrcv('?HZV')
+# print send_msg_to_avrcv('?HZV')
 
 # for i in range(256):
 #     recv = send_msg_to_avrcv('?RGB{}'.format(i))

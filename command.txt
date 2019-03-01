@@ -1,0 +1,14 @@
+###############
+### Queries ###
+###############
+?P - query main zone power state: PWR1=Off, PWR0=On
+?ZEP - query hdzone power state: ZEP1=Off, ZEP0=On
+
+################
+### Commands ###
+################
+
+PO - power on main zone
+PF - power off main zone
+ZEO - power on hdzone
+ZEF - power off hdzone
