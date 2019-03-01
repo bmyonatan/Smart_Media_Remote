@@ -2,12 +2,13 @@ class _MainZoneQuery(object):
     def __init__(self):
         self.Power = '?P'
         self.Volume = '?V'
-
+        self.Mute = '?M'
 
 class _HdZoneQuery(object):
     def __init__(self):
         self.Power = '?ZEP'
         self.Volume = '?HZV'
+
 
 
 class _MainZoneCommand(object):
