@@ -1,5 +1,7 @@
+from av_reciever import send_avr_command
+
 def main():
-  pass
+  send_avr_command
   
 if __name__ == '__main__':
   main()
