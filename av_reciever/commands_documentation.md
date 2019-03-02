@@ -3,8 +3,10 @@
 * **?ZEP** - query hdzone power state: ZEP1=Off, ZEP0=On
 * **?V** - qury main zone volume level: VOL*** - {000:-∞, 001:-80dB, ..., 181:12dB
 * **?HZV** - query hdzone volume level: XV*** - {00:-∞, 01:-80dB, ..., 81:0dB}
-* **?M** - query Mute state - MUT1=NotMuted, MUT0=Muted
-* **?RGB
+* **?M** - query Main Zone mute state - MUT1=NotMuted, MUT0=Muted
+* **?HZM** - query HDZone mute state - ZHMUT1=NotMuted, HZMUT0=Muted
+* <b>?RGB**</b> - query name of number of input. For Example: *?RGB25 - RGB251Hot*
+
 
 #Commands
 * **PO** - power on main zone
@@ -20,6 +22,7 @@
 * **MO** - Mute Main zone.
 * **MF** - UnMute Main zone. 
 * **\*\*FN** - Set Main Input to **.
+* **\*'*ZEA** set HDZone input to **.
 
     | ** | Input |
     |----|:-----------------:|
@@ -29,5 +32,6 @@
     | **06** | **PS4** |
     | **20** | **Nintendo Switch** |
     | **25** | **Hot** |
+    | **33** | **Bluetooth Audio** |
     | **38** | **Internet Radio** |
     | **53** | **Spotify** |
