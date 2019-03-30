@@ -22,7 +22,7 @@
 * **MO** - Mute Main zone.
 * **MF** - UnMute Main zone. 
 * **\*\*FN** - Set Main Input to **.
-* **\*'*ZEA** set HDZone input to **.
+* **\*\*ZEA** set HDZone input to **.
 
     | ** | Input |
     |----|:-----------------:|
