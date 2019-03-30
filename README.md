@@ -11,6 +11,7 @@ The features I wanted to include in my solution are:
 * Streaming from spotify to each zone (Using google assistant)
 * Controling the listening mode in the main zone (Auto Surround vs Stereo vs Extended Stereo)
 * Controling Tuner Frequency/Preset to play in main zone.
+
 At first, I tried controling the reciever with upnp. I researched about UPnP and SOAP, and realized that the amount of control I will have with going with UPnP will be very minimal.
 I knew that there is some way of controling the reciever through my local network, because it does have an app that enables these features.
 My first thougt was to try to reverse engineer the app, but because I never developed an app for android, the process quickly became very confusing.
