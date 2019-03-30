@@ -1,6 +1,7 @@
 from flask import Flask, request
 from av_reciever.commands import AvReceiverCommands
 from av_reciever.send_avr_command import send_to_avr
+from actions_wrapper import play_tv_show_in_living_room
 
 app = Flask(__name__)
 
@@ -64,6 +65,13 @@ def change_input():
             send_to_avr(AvReceiverCommands.HDZone.Command.ChangeInput.Spotify)
 
     return 'Changing TV State'
+
+@app.route('/play_show',methods=['POST', 'GET'])
+def play_show():
+    data = request.json
+    tvshow = data['show_name']
+    play_tv_show_in_living_room(tvshow)
+    return "Playing {} on Kodi".format(tvshow)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
